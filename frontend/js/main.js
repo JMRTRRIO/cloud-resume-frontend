@@ -91,7 +91,7 @@ async function fetchGitHubProjects() {
     const container = document.getElementById('github-projects');
     if (!container) return; // Stop if we aren't on the projects page
 
-    const username = "Bubblipathic";
+    const username = "JMRTRRIO";
     const gitApiUrl = `https://api.github.com/users/${username}/repos?sort=updated&direction=desc`;
     const cacheKey = `github_repos_${username}`;
 
@@ -100,7 +100,7 @@ async function fetchGitHubProjects() {
         // Clear the "Fetching..." text
         container.innerHTML = "";
 
-        const hiddenRepos = ["bubblipathic", "another-repo-to-hide"];
+        const hiddenRepos = ["JMRTRRIO", "another-repo-to-hide"];
 
         repos.forEach(repo => {
             if (repo.fork) return; 
